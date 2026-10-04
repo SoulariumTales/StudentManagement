@@ -4,6 +4,13 @@ class Login
 {
     public bool LoginUser(string username, string password)
     {
-        return username == "admin" && password == "123456";
+        if (username == "admin" && password == "123456")
+        {
+            Console.WriteLine("Login successful!");
+            return true;
+        }
+
+        Console.WriteLine("Login failed!");
+        return false;
     }
 }
